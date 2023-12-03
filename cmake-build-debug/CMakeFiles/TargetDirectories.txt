@@ -1,0 +1,3 @@
+F:/PROJECT/stm32cubemx/cubemx/simple-flight/cmake-build-debug/CMakeFiles/simple-flight.elf.dir
+F:/PROJECT/stm32cubemx/cubemx/simple-flight/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/PROJECT/stm32cubemx/cubemx/simple-flight/cmake-build-debug/CMakeFiles/rebuild_cache.dir

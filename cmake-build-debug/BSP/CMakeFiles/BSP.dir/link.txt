@@ -1,0 +1,2 @@
+arm-none-eabi-ar qc libBSP.a CMakeFiles/BSP.dir/lcd.c.obj CMakeFiles/BSP.dir/lcd_init.c.obj
+C:\arm-gnu-toolchain\bin\arm-none-eabi-ranlib.exe libBSP.a
