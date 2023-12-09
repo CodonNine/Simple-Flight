@@ -1,5 +1,5 @@
 #include "st7789.h"
-
+#include "stdio.h"
 #ifdef USE_DMA
 #include <string.h>
 uint16_t DMA_MIN_SIZE = 16;
@@ -188,7 +188,7 @@ void ST7789_Init(void)
   	ST7789_WriteCommand (ST7789_DISPON);	//	Main screen turned on	
 
 	HAL_Delay(50);
-	ST7789_Fill_Color(BLACK);				//	Fill with Black.
+	ST7789_Fill_Color(WHITE);				//	Fill with Black.
 }
 
 /**
@@ -744,4 +744,17 @@ void ST7789_Test(void)
 	ST7789_Fill_Color(WHITE);
 	ST7789_DrawImage(0, 0, 128, 128, (uint16_t *)saber);
 	HAL_Delay(3000);
+}
+
+
+/**
+ *
+ * @param num
+ * @param font
+ */
+char num_data[4];
+void ST7789_Draw_Single_Num(uint16_t x,uint16_t y,uint8_t num,FontDef font,uint16_t color,uint16_t bgcolor)
+{
+    sprintf(num_data,"%d",num);
+    ST7789_WriteString(x,y,num_data,font,color,bgcolor);
 }

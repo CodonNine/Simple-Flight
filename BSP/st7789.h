@@ -7,7 +7,7 @@
 extern SPI_HandleTypeDef ST7789_SPI_PORT;
 
 /* choose whether use DMA or not */
-#define USE_DMA
+//#define USE_DMA
 
 /* If u need CS control, comment below*/
 //#define CFG_NO_CS
@@ -256,7 +256,7 @@ void ST7789_TearEffect(uint8_t tear);
 
 /* Simple test function. */
 void ST7789_Test(void);
-
+void ST7789_Draw_Single_Num(uint16_t x,uint16_t y,uint8_t num,FontDef font,uint16_t color,uint16_t bgcolor);
 #ifndef ST7789_ROTATION
     #error You should at least choose a display rotation!
 #endif
