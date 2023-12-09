@@ -1,7 +1,6 @@
 #include "multi_button.h"
 #include "main.h"
 #include "usart.h"
-#include "lcd.h"
 
 struct Button btn_x;
 struct Button btn_y;

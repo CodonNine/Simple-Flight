@@ -5,7 +5,6 @@
 #ifndef BSP_H
 #define BSP_H
 
-#include "lcd_init.h"
-#include "lcd.h"
+#include "st7789.h"
 
 #endif //BSP_H
